@@ -39,7 +39,7 @@
   dataLabel: Product2 as GoodProduct
   dataURL: products.ttl
   queryMap: |
-    <http://example.org/product1>@<GoodProduct>
+    <http://example.org/product2>@<GoodProduct>
   status: conformant
 - schemaLabel: Products
   schemaURL: products.shex
