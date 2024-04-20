@@ -5,8 +5,8 @@ prefix schema: <http://schema.org/>
 
 <Product> {
  (:code xsd:integer | :name xsd:string );
- :related @<Product> * ;
- :review @<Review> *
+ :review @<Review> * ;
+ :related @<Product> * 
 }
 
 <Review> {

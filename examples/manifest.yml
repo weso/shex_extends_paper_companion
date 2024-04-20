@@ -29,14 +29,35 @@
   status: conformant
 - schemaLabel: Products
   schemaURL: products.shex
-  dataLabel: Product1 as GoodProduct
+  dataLabel: Product1 as GoodProduct (fails)
+  dataURL: products.ttl
+  queryMap: |
+    <http://example.org/product1>@<GoodProduct>
+  status: nonconformant
+- schemaLabel: Products
+  schemaURL: products.shex
+  dataLabel: Product2 as GoodProduct
   dataURL: products.ttl
   queryMap: |
     <http://example.org/product1>@<GoodProduct>
   status: conformant
 - schemaLabel: Products
   schemaURL: products.shex
+  dataLabel: Product3 as ExternalProductAttempt
+  dataURL: products.ttl
+  queryMap: |
+    <http://example.org/product1>@<ExternalProductAttempt>
+  status: nonconformant
+- schemaLabel: Products
+  schemaURL: products.shex
   dataLabel: Product3 as ExternalProduct
+  dataURL: products.ttl
+  queryMap: |
+    <http://example.org/product3>@<ExternalProduct>
+  status: conformant
+- schemaLabel: Products
+  schemaURL: products.shex
+  dataLabel: Product3 as Product
   dataURL: products.ttl
   queryMap: |
     <http://example.org/product3>@<ExternalProduct>
