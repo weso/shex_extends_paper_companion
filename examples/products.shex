@@ -15,13 +15,19 @@ prefix schema: <http://schema.org/>
 }
 
 <GoodProduct> @<Product> AND {
- :review [:Good] * ;
+ :review @<GoodReview> * ;
+}
+<GoodReview> { 
+ :value [:Good] 
 }
 
 <ExternalProductAttempt> @<Product> AND {
- :review xsd:integer * 
+ :review @<ExternalReview> * 
+}
+<ExternalReview> { 
+ :value xsd:integer 
 }
 
 <ExternalProduct> extends @<Product> {
- :review xsd:integer *
+ :review @<ExternalReview> *
 }
