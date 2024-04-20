@@ -1,0 +1,27 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+
+
+<Product> {
+ (:code xsd:integer | :name xsd:string );
+ :related @<Product> * ;
+ :review @<Review> *
+}
+
+<Review> {
+ :value  [:Bad :Good];
+ :timestamp xsd:integer
+}
+
+<GoodProduct> @<Product> AND {
+ :review [:Good] * ;
+}
+
+<ExternalProductAttempt> @<Product> AND {
+ :review xsd:integer * 
+}
+
+<ExternalProduct> extends @<Product> {
+ :review xsd:integer *
+}

@@ -20,3 +20,24 @@
   queryMap: |
     <http://example.org/r1>@<Figure>
   status: conformant
+- schemaLabel: Products
+  schemaURL: products.shex
+  dataLabel: Product1 as Product
+  dataURL: products.ttl
+  queryMap: |
+    <http://example.org/product1>@<Product>
+  status: conformant
+- schemaLabel: Products
+  schemaURL: products.shex
+  dataLabel: Product1 as GoodProduct
+  dataURL: products.ttl
+  queryMap: |
+    <http://example.org/product1>@<GoodProduct>
+  status: conformant
+- schemaLabel: Products
+  schemaURL: products.shex
+  dataLabel: Product3 as ExternalProduct
+  dataURL: products.ttl
+  queryMap: |
+    <http://example.org/product3>@<ExternalProduct>
+  status: conformant
