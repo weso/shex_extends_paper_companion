@@ -6,3 +6,17 @@
   queryMap: |
     <http://example.org/origin>@<GeoFigure>
   status: conformant
+- schemaLabel: Figures
+  schemaURL: figures.shex
+  dataLabel: R1 as Rectangle
+  dataURL: figures.ttl
+  queryMap: |
+    <http://example.org/r1>@<Rectangle>
+  status: conformant
+- schemaLabel: Figures
+  schemaURL: figures.shex
+  dataLabel: R1 as Figure
+  dataURL: figures.ttl
+  queryMap: |
+    <http://example.org/r1>@<Figure>
+  status: conformant
