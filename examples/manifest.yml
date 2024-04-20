@@ -1,0 +1,8 @@
+---
+- schemaLabel: Figures
+  schemaURL: figures.shex
+  dataLabel: Origin as GeoFigure
+  dataURL: figures.ttl
+  queryMap: |
+    <http://example.org/origin>@<GeoFigure>
+  status: conformant
