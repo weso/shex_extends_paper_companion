@@ -10,5 +10,5 @@ prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
 
  :product3 :code 3 ;
  :review [:value :Good; :timestamp 67], 
-         [:value :Bad, :timestamp 78], 
+         [:value :Bad; :timestamp 78], 
          [:value 5], [:value 2] .
