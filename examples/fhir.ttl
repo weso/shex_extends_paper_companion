@@ -1,7 +1,7 @@
 prefix :       <http://example.org/>
 prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
 
-:product1 :code 1 ;
+:obs1 :code 1 ;
  :review [:value :Bad; :timestamp 23];
  :related :product2 .
 
