@@ -1,0 +1,14 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+
+:product1 :code 1 ;
+ :review [:value :Bad; :timestamp 23];
+ :related :product2 .
+
+:product2 :name "Nice Book" ;
+ :review [:value :Good; :timestamp 45] .
+
+:product3 :code 3 ;
+ :review [:value :Good; :timestamp 67], 
+         [:value :Bad; :timestamp 78], 
+         [:value 5], [:value 2] .

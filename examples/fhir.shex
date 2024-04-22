@@ -1,0 +1,44 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+
+
+<Observation> CLOSED {
+ :code   @<Coding> ;
+ :value  @<Value> ;
+ :component {
+  :code   @<Coding> ;
+  :value  @<Value> ;
+ } *
+ # ...
+}
+
+<BloodPressure> extends <Observation> {
+ :component {
+  :code   @<SystolicCode> ;
+  :value  @<ValidSystolic> ;
+ } ;
+ :component {
+  :code   @<DiastolicCode> ;
+  :value  @<ValidDiastolic> ;
+ } ;
+}
+
+<Posture> extends <Observation> {
+ :component {
+   :code   @<PostureCode> ;
+   :value  @<PostureValueSet> ;
+ } ;
+}
+
+<PostureBP> extends @<BloodPressure> 
+            extends @<Posture> {}
+
+<Coding> .
+<Value> .
+<SystolicCode> { a [ :SystolicCode ] }
+<ValidSystolic> xsd:decimal 
+<DiastolicCode> { a [ :DiastolicCode ] }
+<ValidDiastolic xsd:decimal 
+<PostureCode> { a [ :PostureCode ]}
+<PostureValueSet> [ :left :right ]
