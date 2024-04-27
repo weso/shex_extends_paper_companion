@@ -5,7 +5,7 @@ This repository contains examples and code from the paper about ShEx+extends in 
 
 ## Running the examples using ShEx simple demo
 
-The ShEx simple demo can be used to run the examples interactively by clicking <a href="https://shex.io/webapps/shex.js/packages/shex-webapp/doc/shex-simple?manifestURL=https://raw.githubusercontent.com/weso/shex_extends_paper_companion/master/examples/manifest.yml">this link</a>.
+The ShEx simple demo can be used to run the examples interactively by clicking <a href="https://shex.io/webapps/shex.js/packages/shex-webapp/doc/shex-simple?manifestURL=https://anonymous.4open.science/api/repo/shex_extends_paper-0B58/file/examples/manifest.yml?v=cf8be4c6">this link</a>.
 
 ## Running the examples using the RDFShape playground
 
