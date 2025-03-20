@@ -1,0 +1,8 @@
+---
+- schemaLabel: Figures
+  schemaURL: figures.shex
+  dataLabel: r1 as figure
+  dataURL: figures.ttl
+  queryMap: |
+    <http://example.org/r1>@<http://example.org/ColouredCircle>
+  status: conformant
