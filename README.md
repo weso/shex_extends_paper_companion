@@ -6,4 +6,7 @@ The folder <code>motivating_examples</code> contains the examples from the paper
 
 ## Running the examples interactively
 
-The examples can be run using two online ShEx validators: <a href="https://shex.io/webapps/shex.js/packages/shex-webapp/doc/shex-simple">ShEx-Simple</a> and <a href="https://rdfshape.weso.es">RDFShape</a>.
+The examples can be run using two online ShEx validators:
+
+- [ShEx-Simple](https://shex.io/webapps/shex.js/packages/shex-webapp/doc/shex-simple?manifestURL=https://raw.githubusercontent.com/weso/shex_extends_paper_companion/master/motivating_example/manifest.yml)
+- [RDFShape](https://rdfshape.weso.es/link/17424943869)
