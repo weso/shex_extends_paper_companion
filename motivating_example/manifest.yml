@@ -34,3 +34,17 @@
   queryMap: |
     <http://example.org/m24a>@<http://example.org/X_1>
   status: nonconformant
+- schemaLabel: Example_x
+  schemaURL: example_x.shex
+  dataLabel: m2a as x_5
+  dataURL: example_x.ttl
+  queryMap: |
+    <http://example.org/m2a>@<http://example.org/X_5>
+  status: conformant
+- schemaLabel: Example_x
+  schemaURL: example_x.shex
+  dataLabel: m24a as x_6
+  dataURL: example_x.ttl
+  queryMap: |
+    <http://example.org/m24a>@<http://example.org/X_6>
+  status: nonconformant
