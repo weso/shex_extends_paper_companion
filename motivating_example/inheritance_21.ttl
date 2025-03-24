@@ -1,0 +1,7 @@
+prefix : <http://example.org/>
+
+:figure1 :coord [ :x 1.0; :y 2.0 ] ; 
+         :radius 3.0 .
+
+:product1 :review 4 .
+:product2 :review 5; :reiew "Good" .

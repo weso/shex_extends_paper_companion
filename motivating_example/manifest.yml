@@ -48,3 +48,17 @@
   queryMap: |
     <http://example.org/m24a>@<http://example.org/X_6>
   status: nonconformant
+- schemaLabel: Inheritance ShEx 2.1
+  schemaURL: inheritance_21.shex
+  dataLabel: figure as Circle
+  dataURL: inheritance_21.ttl
+  queryMap: |
+    <http://example.org/figure1>@<http://example.org/Circle>
+  status: conformant
+- schemaLabel: Inheritance ShEx 2.1
+  schemaURL: inheritance_21.shex
+  dataLabel: product2 fails as MyProduct
+  dataURL: inheritance_21.ttl
+  queryMap: |
+    <http://example.org/product2>@<http://example.org/MyProduct>
+  status: nonconformant

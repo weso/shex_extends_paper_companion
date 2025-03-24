@@ -1,0 +1,23 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:Figure { 
+    :coord @:Coord 
+}
+:Circle @:Figure AND {
+    :radius xsd:decimal
+}
+:Coord { 
+    :x xsd:decimal ;
+    :y xsd:decimal 
+}
+
+:Product {
+    :review xsd:integer
+}
+
+:MyProduct @:Product AND{
+    :review xsd:string
+}
+
+
