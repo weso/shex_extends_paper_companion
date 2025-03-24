@@ -8,7 +8,6 @@ prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
     :scope "fill"    ;
     :name  "colour"  .
 
-
 :r1 :attr  :a1, :a2  ;
     :coord :c1       .
 
