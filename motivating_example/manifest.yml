@@ -6,3 +6,31 @@
   queryMap: |
     <http://example.org/r1>@<http://example.org/ColouredCircle>
   status: conformant
+- schemaLabel: Example_x
+  schemaURL: example_x.shex
+  dataLabel: m24 as x_1
+  dataURL: example_x.ttl
+  queryMap: |
+    <http://example.org/m24>@<http://example.org/X_1>
+  status: conformant
+- schemaLabel: Example_x
+  schemaURL: example_x.shex
+  dataLabel: m246 as x_2
+  dataURL: example_x.ttl
+  queryMap: |
+    <http://example.org/m246>@<http://example.org/X_2>
+  status: conformant
+- schemaLabel: Example_x
+  schemaURL: example_x.shex
+  dataLabel: m24 fails as x_2
+  dataURL: example_x.ttl
+  queryMap: |
+    <http://example.org/m24>@<http://example.org/X_2>
+  status: nonconformant
+- schemaLabel: Example_x
+  schemaURL: example_x.shex
+  dataLabel: m24a fails as x_1
+  dataURL: example_x.ttl
+  queryMap: |
+    <http://example.org/m24a>@<http://example.org/X_1>
+  status: nonconformant

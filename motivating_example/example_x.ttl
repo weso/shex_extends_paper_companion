@@ -1,0 +1,6 @@
+prefix : <http://example.org/>
+
+:m24 :p 2, 4 .
+:m246 :p 2, 4, 6 .
+:m24a :p 2, 4, "a" .
+:m2a :p 2, "a" .

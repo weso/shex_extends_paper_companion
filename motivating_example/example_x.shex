@@ -1,0 +1,14 @@
+prefix : <http://example.org/>
+
+:X_0 { :p @:Even }
+:X_1 extends @:X_0 { :p @:Even }
+:X_2 extends @:X_1 { :p @:LessThan5 }
+:X_3 extends @:X_0 { :p @:Even } AND { :p @:GreaterThan5 * }
+:X_4 extends @:X_6 { :p @:LessThan5 }
+:X_5 extends @:X_0 EXTRA :p {}
+:X_6 extends @:X_3 { :p @:Even }
+
+:Even [ 2 4 6 8 10 12 ]
+:LessThan5 [ 1 2 3 4 ]
+:GreaterThan5 [ 6 7 8 9 10 11 12 ]
+
